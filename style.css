@@ -42,9 +42,6 @@
 {
 display: none;
 }*/
-#sidebar.active
-{
-}
 #sidebar.active .dash_text
 {
     display: none;
@@ -87,7 +84,7 @@ display: none;
     margin-left: 40px;
     padding-left: 10px;
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 800px)
 {
     #sidebar
     {
@@ -98,9 +95,69 @@ display: none;
     {
        display: none;
     }
-    #sidebar.active .dash_text
+    #sidebar.active .dash_text , #sidebar.active .dash_icon
+    {
+      display: inherit; 
+    }
+    #sidebar.active
+    {
+        background-color: #E0E0E0;
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    #sidebar .dash_icon
     {
         display: none;
+    }
+    #sidebar.active .dash_icon
+    {
+        display: inherit;
+        
+    }
+    #sidebar
+    {
+        left: 0px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .rightpanel
+    {
+        margin-left: 30px;
+    }
+    .rightpanel_cover
+    {
+        margin-left: -20px;
+    }
+    .rightpanel_cover .col-xs-offset-0 
+    {
+            margin-left:
+    }
+}
+/* Action text none*/
+@media screen and (max-width: 950px)
+{
+.actionText
+    {
+        display: none;
+    }
+    td span
+    {
+        padding: 2px;
+    }
+}
+@media screen and (max-width: 450px)
+{
+    .actionText
+    {
+        display: none;
+    }
+    td span
+    {
+        padding: 0px;
     }
 }
 @media screen and (max-width: 415px)
@@ -383,4 +440,34 @@ td span
 form span
 {
     background-color: #FFD0B9;
+}
+@media screen and (max-width: 610px)
+{
+    .assessment
+    {
+        margin-left: -20px;
+    }
+    .assessment .row 
+    {
+        margin-right: 15px;
+        margin-left: -20px;
+    }
+    .formcontent
+    {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 450px)
+{
+     .formcontent
+    {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 400px)
+{
+     .formcontent
+    {
+        width: 300px;
+    }
 }
