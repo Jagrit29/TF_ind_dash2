@@ -7,6 +7,14 @@
     text-transform:capitalize;
     color: #666666;
 }
+.navbar
+{
+    background-color: #F5F5F5;
+    border-bottom: 2px #F0F0F0;
+    border-bottom-style: inset;
+    
+}
+
 .navbutton
 {
     padding: 10px;
@@ -32,8 +40,7 @@
 #sidebar
 {
     position: fixed;
-    width: 200px;
-    height: 100%;
+    width: 150px;
     background: ;
     left: -1px;
     transition: all 500ms linear;
@@ -52,7 +59,7 @@ display: none;
     font-size: 15px!important;
     line-height: 20px!important;
     letter-spacing: .05em!important;
-    text-transform:uppercase;
+    text-transform:capitalize;
     color: #666666;
     padding: 15px 10px;
     
@@ -101,8 +108,10 @@ display: none;
     }
     #sidebar.active
     {
-        background-color: #E0E0E0;
+        background-color: #F5F5F5;
         z-index: 1;
+        border-right-style: inset;
+        border-bottom-style: inset;
     }
 }
 @media screen and (max-width: 600px)
@@ -231,8 +240,8 @@ table td
      border: 3px solid white;
 }
     
-tr:nth-child(even){background-color:#FFD0B9}
-tr:nth-child(odd){background-color:}
+tr:nth-child(even){background-color:#E8E8E8}
+tr:nth-child(odd){background-color:#F5F5F5}
 
 th {
   background-color: #ff5400;
@@ -425,8 +434,6 @@ th {
 }
 .tableheader button
 {
-    background-color:#FF5400;
-    border-color: white;
 }
 td span
 {
@@ -434,12 +441,25 @@ td span
 }
 .rightpanel button
 {
-    background-color:#FF5400;
-    border-color: #FF5400;
+}
+#postbutton
+{
+    color:#fe6625;
+    border: 1px solid #C0C0C0;
+    border-radius: 25px;
+    background-color: #F5F5F5;
+    float: right;
+    margin-top: 5px;
 }
 form span
 {
     background-color: #FFD0B9;
+}
+.tablehead
+{
+    background-color: #E0E0E0;
+    padding: 5px;
+    padding-left: 3px;
 }
 @media screen and (max-width: 610px)
 {
